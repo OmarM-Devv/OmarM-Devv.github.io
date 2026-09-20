@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Application Tracker Agent</title>
+  <meta name="description" content="Personal automation for reconciling job-application activity from Gmail into Google Sheets.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="index.html">Application Tracker Agent</a>
+      <div class="navlinks">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section class="hero">
+      <h1>Application Tracker Agent</h1>
+      <p class="lead">
+        A personal automation tool that helps reconcile job-application activity from Gmail
+        with a private Google Sheets tracker.
+      </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>What it does</h2>
+        <p>
+          The agent reads relevant Gmail messages in read-only mode, identifies application
+          updates, and compares them with the user's job-application tracker.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Google Sheets</h2>
+        <p>
+          The agent reads and, when explicitly authorised by the user, updates specific
+          Google Sheets used for application tracking.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Private use</h2>
+        <p>
+          This application is intended for the owner's personal use. It is not a public
+          SaaS product and does not sell or monetise Google user data.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Google API access</h2>
+      <p>The application requests only the access it needs:</p>
+      <ul>
+        <li><code>gmail.readonly</code> to read relevant Gmail messages.</li>
+        <li><code>spreadsheets</code> to read and update the user's application-tracking sheets.</li>
+      </ul>
+      <p>
+        Authentication credentials and refresh tokens are not collected through this website.
+        They are stored by the user in their own local environment or private GitHub Actions secrets.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        Support email:
+        <a href="mailto:umar2016mohamed@gmail.com">umar2016mohamed@gmail.com</a>
+      </p>
+      <p>
+        For details about data handling, see the <a href="privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <small>Application Tracker Agent · Personal use<br>Not affiliated with, endorsed by, or sponsored by Google LLC.</small>
+  </div>
+</footer>
+</body>
+</html>
