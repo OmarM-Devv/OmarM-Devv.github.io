@@ -22,7 +22,7 @@
 <main>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="lead">Last updated: 20 September 2026</p>
+    <p class="lead">Last updated: 22 September 2026</p>
 
     <div class="card">
       <h2>1. Purpose</h2>
@@ -42,6 +42,11 @@
           Google Sheets data through
           <code>https://www.googleapis.com/auth/spreadsheets</code>.
         </li>
+        <li>
+          Google Drive file names and modified dates, never file contents, through the
+          read-only metadata scope
+          <code>https://www.googleapis.com/auth/drive.metadata.readonly</code>.
+        </li>
       </ul>
 
       <h2>3. How Google data is used</h2>
@@ -53,6 +58,11 @@
       <p>
         Google Sheets data is used only to read the owner's tracker and, when the owner
         deliberately enables write mode, update relevant tracker fields.
+      </p>
+      <p>
+        Google Drive metadata is used only to list the names and modified dates of the
+        folders inside one folder of tailored CVs chosen by the owner, so the agent can
+        point out a CV that has no matching tracker entry. File contents are never read.
       </p>
 
       <h2>4. Data storage</h2>
