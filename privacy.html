@@ -22,7 +22,7 @@
 <main>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="lead">Last updated: 22 September 2026</p>
+    <p class="lead">Last updated: 30 October 2026</p>
 
     <div class="card">
       <h2>1. Purpose</h2>
@@ -47,6 +47,12 @@
           read-only metadata scope
           <code>https://www.googleapis.com/auth/drive.metadata.readonly</code>.
         </li>
+        <li>
+          A separate Google Calendar that the application creates itself, called
+          "Job applications", and the events on it, through
+          <code>https://www.googleapis.com/auth/calendar.app.created</code>. This scope
+          does not give access to the owner's own calendars or any other events.
+        </li>
       </ul>
 
       <h2>3. How Google data is used</h2>
@@ -63,6 +69,12 @@
         Google Drive metadata is used only to list the names and modified dates of the
         folders inside one folder of tailored CVs chosen by the owner, so the agent can
         point out a CV that has no matching tracker entry. File contents are never read.
+      </p>
+      <p>
+        Google Calendar access is used only, when the owner switches it on, to create the
+        "Job applications" calendar and to add or move events on it for interview,
+        assessment and deadline dates found in job-application emails. No other calendar
+        is read or changed.
       </p>
 
       <h2>4. Data storage</h2>

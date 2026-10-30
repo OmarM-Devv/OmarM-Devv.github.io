@@ -44,7 +44,8 @@ property, using the HTML tag method — the meta tag lives in `index.html`.
 ## Keeping it honest
 
 The scopes described here must match `src/tracker_agent/auth.py` in the tracker
-repository. They are currently `gmail.readonly` and `spreadsheets`. If that list ever
+repository. They are currently `gmail.readonly`, `spreadsheets`,
+`drive.metadata.readonly` (22/09/2026) and `calendar.app.created` (30/10/2026). If that list ever
 changes, this site changes in the same commit — a privacy policy that misdescribes what
 the code does is worse than none.
 
